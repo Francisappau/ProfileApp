@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>AGUTEY</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+<style type="text/css">
+                        body { postion:fixed;
+                               background-color:#222;
+                               background-repeat:no-repeat;
+                               background-attachment:fixed;
+                               background-position:top center; 
+                               background-size:cover;
+                               /*background: linear-gradient(90deg, white, gray);*/
+                               /*background-color:#eee;*/
+                             }
+
+div
+{
+width:400px;
+height:5px;
+background:none;
+position:relative;
+animation:mymove 3s;
+animation-iteration-count:1;
+animation-fill-mode:forwards;
+/* Safari and Chrome */
+-webkit-animation:mymove 3s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-fill-mode:forwards;
+
+}
+
+@keyframes mymove
+{
+from {left:0px;}
+to {left:35%;}
+}
+
+
+
+/*Safari, Chrome, and Opera*/
+@-webkit-keyframes mymove
+{
+from {left:0px;}
+to {left:35%;}
+}
+
+
+body, h1, p {
+  font-family: "Cambria","Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: yellow;
+}
+
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 177px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: white;
+  text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+ <canvas id="myCanvas"></canvas>
+ 
+ <div class="col-md-12">
+  <a  href="isaacagutey.com"><h1> <p class="lead">Back to my<strong>profile</strong></p></h1></a>
+     
+  <div class="row">
+    
+      <div class="main-icon text-success"><span class="uxicon uxicon-clock-refresh"></span></div>
+      
+      <script type="text/javascript" src="MyJQuery.js"></script>
+      <script type="text/javascript" src="Alphabet.js"></script>
+      <script type="text/javascript" src="MyBubble.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+
+      
+     
+  </div>
+<object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=e3e08ace8dfe67b443cc48de9151c8cf1a442cca&style=0" /></object>
+</div>
+
+</body>
+</html>

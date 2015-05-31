@@ -1,0 +1,33 @@
+<!-- CONTACT -->
+<section id="contact" class="fadeInLeft">
+    <div class="section-container row nomargin">
+        <div class="section-title">
+            <h1 class="green zoomInDown">Get In Touch</h1>
+            <hr class="style-eight red">
+        </div>
+        <div ng-controller="ContactCtrl" class="col-md-12 col-md-offset-0 col-sm-10 col-sm-offset-1 form-container" id="form">
+            <p ng-class="result" style="padding: 15px; margin:0;">{{resultMessage}}</p>
+            <form ng-submit="submit(contactform)" id="formContact" method="post" role="form" name="contactform" onsubmit='location.reload()'>
+                <div class="col-lg-6 form-container">
+                     <div ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+                    <input ng-model="formData.inputName" class="form-control" id="name" name="name" type="text" placeholder="Subject" required>
+                     </div>
+                     <div  ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+                    <input  ng-model="formData.inputEmail" class="form-control" id="email" name="email" type="text" placeholder="Your Name" required>
+                     </div>
+                     <div ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
+                    <input ng-model="formData.inputSubject" class="form-control" id="subject" name="subject" type="text" placeholder="Your Email" required>
+                     </div>
+
+                </div>
+                <div class="col-lg-6 form-container">
+                    <div ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+                    <textarea ng-model="formData.inputMessage" ng-disabled="submitButtonDisabled" class="form-control" id="message" name="message" placeholder="What's On Your Mind?" rows="9" required></textarea>
+                    </div>
+                 </div>
+                <div class="clearfix visible-lg-block visible-md-block"></div>
+                <button class="btn btn-custom"><i class="fa fa-send-o fa-fw"></i>Send</button>
+            </form>
+        </div>
+    </div>
+</section>
