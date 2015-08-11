@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-
     <meta charset="utf-8">
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -51,69 +49,70 @@
     <script src="app.js"></script>
 
     <script src="ContactCtrl.js"></script>
-
 </head>
 <body>
 <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TB4DHW"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+ <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TB4DHW" height="0" width="0" style="display:none;visibility:hidden">
+ </iframe>
+</noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TB4DHW');</script>
+})(window,document,'script','dataLayer','GTM-TB4DHW');
+</script>
 <!-- End Google Tag Manager -->
 
     <!-- FIXED SIDEBAR -->
-    <section class="col-md-3 col-md-offset-9 nopadding" id="intro">
-        <div id="profile">
-         <img id="image" src="assets/css/iceage.jpg"  class="bounceIn">
-          <h1>Appau Francis</h1>
-          <h2 class="blink">Full Stack Developer</h2>
-          <div class="social_media">
-           <a href="https://github.com/francisappau" target="_blank"><i class="fa fa-github fa-fw"></i></a>
-          </div>
-
-            <!-- NAVIGATION MENU -->
-            <nav id="sidebar">
-                <ul class="sidebar-nav flexbox">
-                    <li class="zem">
-                        <a href="#/about">
-                            <span class="icon"><i class="fa fa-user fa-lg fa-fw"></i></span>
-                            <span class="option hidden-xs">About Me</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#/skills">
-                            <span class="icon"><i class="fa fa-cogs fa-lg fa-fw"></i></span>
-                            <span class="option hidden-xs">Skills</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#/portfolio">
-                            <span class="icon"><i class="fa fa-briefcase fa-lg fa-fw"></i></span>
-                            <span class="option hidden-xs">Portfolio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#/resume">
-                            <span class="icon"><i class="fa fa-file-text fa-lg fa-fw"></i></span>
-                            <span class="option hidden-xs">Resume</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#/contact">
-                            <span class="icon"><i class="fa fa-envelope-o fa-lg fa-fw"></i></span>
-                            <span class="option hidden-xs">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-    <div  ng-app="portfolio" class="col-lg-9  col-md-9  nopadding" id="content">
-        <ui-view></ui-view>
-    </div>
+<section class="col-md-3 col-md-offset-9 nopadding" id="intro">
+<div id="profile">
+<img id="image" src="assets/css/iceage.jpg"  class="bounceIn">
+<h1>Appau Francis</h1>
+<h2 class="blink">Full Stack Developer</h2>
+<div class="social_media">
+<a href="https://github.com/francisappau" target="_blank"><i class="fa fa-github fa-fw"></i></a>
+</div>
+<!-- NAVIGATION MENU -->
+<nav id="sidebar">
+    <ul class="sidebar-nav flexbox">
+        <li class="zem">
+            <a href="#/about">
+             <span class="icon"><i class="fa fa-user fa-lg fa-fw"></i></span>
+             <span class="option hidden-xs">About Me</span>
+            </a>
+        </li>
+        <li>
+         <a href="#/skills">
+          <span class="icon"><i class="fa fa-cogs fa-lg fa-fw"></i></span>
+          <span class="option hidden-xs">Skills</span>
+         </a>
+        </li>
+        <li>
+         <a href="#/portfolio">
+          <span class="icon"><i class="fa fa-briefcase fa-lg fa-fw"></i></span>
+          <span class="option hidden-xs">Portfolio</span>
+         </a>
+        </li>
+        <li>
+         <a href="#/resume">
+          <span class="icon"><i class="fa fa-file-text fa-lg fa-fw"></i></span>
+          <span class="option hidden-xs">Resume</span>
+          </a>
+        </li>
+        <li>
+         <a href="#/contact">
+          <span class="icon"><i class="fa fa-envelope-o fa-lg fa-fw"></i></span>
+          <span class="option hidden-xs">Contact</span>
+         </a>
+        </li>
+    </ul>
+</nav>
+</div>
+</section>
+<div  ng-app="portfolio" class="col-lg-9  col-md-9  nopadding" id="content">
+ <ui-view></ui-view>
+</div>
 <script>
     $(document).ready(function(){
 
@@ -132,7 +131,6 @@
 
     })
 </script>
-
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
